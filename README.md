@@ -10,10 +10,10 @@
 
 ## To Use:
 
-Include the plugin stylesheet and javascript and then add the follow web component HTML to your page...
+Include the plugin stylesheet and javascript and then add the following web component HTML to your page...
 
 `<input-slider name="slider1" min="0" max="100" value="50"></input-slider>`
 
----
+Each web component you define will automatically create a corresponding hidden input of the same name.
 
-_...the rest is magic..._
+Add your own custom styles and enjoy.
