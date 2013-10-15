@@ -1,0 +1,28 @@
+slider, rail, handle {
+  display: block;
+}
+slider {
+  width: 400px;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+rail {
+  position: relative;
+  width: auto;
+  height: 10px;
+  background-color: black;
+  margin: 40px 20px;
+}
+handle {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 15px;
+  margin-left: -15px;
+  cursor: pointer;
+}
