@@ -12,7 +12,7 @@
   $.fn.extend({
     // activates inputSlider component on given element
     inputSlider: function () {
-      var $body, $slider, $input, $rail, $handle, railWidth, range, start, end, lastPx, startHx, inputVal, grab, drag, release;
+      var $body, $slider, $input, $rail, $handle, railWidth, range, min, max, lastPx, initHx, inputVal, grab, drag, release;
 
       // refs
       $body = $('body');
@@ -27,16 +27,16 @@
       $slider.append($rail);
 
       // important numbers
-      start = parseInt($slider.attr('start'), 10);
-      end = parseInt($slider.attr('end'), 10);
-      range = end - start;
+      min = parseInt($slider.attr('min'), 10);
+      max = parseInt($slider.attr('max'), 10);
+      range = max - min;
       railWidth = parseInt($rail.width(), 10);
       lastPx = false;
       inputVal = parseInt($slider.attr('value'), 10);
-      startHx = parseInt((((inputVal * (range / 100)) / range) * railWidth), 10);
+      initHx = parseInt((((inputVal * (range / 100)) / range) * railWidth), 10);
 
-      // set handle starting position
-      $handle.css('left', startHx + 'px');
+      // set initial handle position
+      $handle.css('left', initHx + 'px');
 
       // create input
       $input = $('<input />');
@@ -88,7 +88,7 @@
           $handle.css('left', newHx + 'px');
 
           // update input value
-          newInputVal = Math.round((range * (newHx / railWidth) + start));
+          newInputVal = Math.round((range * (newHx / railWidth) + min));
           $slider.attr('value', newInputVal);
           $input.attr('value', newInputVal);
 
@@ -122,7 +122,7 @@
   });
 
   $(document).ready(function () {
-    $('slider').each(function (i, el) {
+    $('input-slider').each(function (i, el) {
       $(el).inputSlider();
     });
   });

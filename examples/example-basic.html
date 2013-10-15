@@ -7,17 +7,6 @@
   <!-- input slider default css -->
   <link type="text/css" rel="stylesheet" href="../src/css/jquery.inputSlider.css" />
 
-  <!-- a few simple styles to center the example -->
-  <style type="text/css">
-    body {
-      text-align: center;
-    }
-    slider {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
-
   <!-- jquery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -25,12 +14,12 @@
 <body>
   
   <!-- add sliders as shown, they'll automatically be activated by the plugin -->
-  <slider name="slider1" start="20" end="100" value="100"></slider>
-  <slider name="slider2" start="0" end="100" value="50"></slider>
-  <slider name="slider3" start="40" end="180" value="25"></slider>
+  <input-slider name="slider1" min="20" max="100" value="100"></input-slider>
+  <input-slider name="slider2" min="0" max="100" value="50"></input-slider>
+  <input-slider name="slider3" min="40" max="180" value="25"></input-slider>
 
   <!-- include input slider plugin -->
-  <script src="../dist/js/jquery.inputSlider-0.1.0.min.js"></script>
+  <script src="../src/js/jquery.inputSlider.js"></script>
 
 </body>
 </html>

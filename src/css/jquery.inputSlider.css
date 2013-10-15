@@ -1,7 +1,7 @@
-slider, rail, handle {
+input-slider, rail, handle {
   display: block;
 }
-slider {
+input-slider {
   width: 400px;
   padding: 10px 20px;
   margin: 20px;
