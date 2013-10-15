@@ -10,7 +10,7 @@
 
 ## To Use:
 
-Include the plugin stylesheet and javascript and then add the following web component HTML to your page...
+Include jquery along with the plugin stylesheet and javascript, then add the following web component HTML to your page...
 
 `<input-slider name="slider1" min="0" max="100" value="50"></input-slider>`
 
