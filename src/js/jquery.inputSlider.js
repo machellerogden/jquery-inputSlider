@@ -97,13 +97,11 @@
 
           // event handler for grabbing the `handle` element
           grab = function () {
-            console.log('grab');
             $slider.on('mousemove', drag);
           };
 
           // event handler for dragging the `handle` element
           drag = function (event) {
-            console.log('drag');
             var px, hx, dx, newHx, newInputVal;
             // if not throttled...
             if (!throttled) {
@@ -140,7 +138,6 @@
 
           // event handler for releasing the `handle` element
           release = function () {
-            console.log('release');
             // set cursor back to auto
             $slider.css('cursor', 'auto');
             // remove all mousemove events from slider
