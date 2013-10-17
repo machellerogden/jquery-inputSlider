@@ -32,8 +32,15 @@
     <input-slider name="slider3" min="40" max="180" value="25"></input-slider>
   </form>
 
-  <!-- include input slider plugin -->
+  <!-- include plugin -->
   <script src="../src/js/jquery.inputSlider.js"></script>
+
+  <!-- activate plugin -->
+  <script>
+    $(document).ready(function () {
+      $.inputSlider();
+    });
+  </script>
 
 </body>
 </html>
