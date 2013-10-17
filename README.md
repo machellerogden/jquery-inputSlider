@@ -16,11 +16,11 @@ Include jquery along with the plugin stylesheet and javascript, then add the fol
 
 `<input-slider name="slider1" min="0" max="100" value="50"></input-slider>`
 
-Then call the plugin to register your components...
+Then call the plugin to activate...
 
-  $(document).ready(function () {
-    $.inputSlider();
-  });
+    $(document).ready(function () {
+        $.inputSlider();
+    });
 
 Add your own custom styles and enjoy.
 
