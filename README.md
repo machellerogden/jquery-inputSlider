@@ -10,7 +10,7 @@
 
 ## To Use:
 
-### For the most basic usage...
+### For basic usage...
 
 Include jquery along with the plugin stylesheet and javascript, then add the following web component HTML to your page...
 
@@ -24,4 +24,4 @@ Then call the plugin to activate...
 
 Add your own custom styles and enjoy.
 
-_Advanced usage instructions coming soon..._
+_Advanced usage instructions coming soon... or just read the source and figure it out for yourself._
